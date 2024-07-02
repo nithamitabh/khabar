@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { NewsItems } from "./NewsItems";
 const NewsBody = ({category}) => {
-    {/* fetching api */}
+    // fetching body
     const [articles,setArticles] =  useState([]);
     useEffect(() => {
         let url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=3ec8a046cab2470dbcffa75d18ca4d87`;
